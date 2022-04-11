@@ -16,5 +16,9 @@ public interface ProduitRepository extends JpaRepository<Produit, Integer> {
     @Transactional
     @Query("update produits p set p.qtStock =p.qtStock+:qte where p.id=:id")
     void updateQteProduit(@Param("id") int id, @Param("qte") int qte);
+    @Modifying
+    @Transactional
+    @Query("update produits p set p.qtStock =p.qtStock-:qte where p.id=:id")
+    void updateQteProduitVente(@Param("id") int id, @Param("qte") int qte);
 
 }

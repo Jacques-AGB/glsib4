@@ -28,4 +28,5 @@ public class VenteService {
     public void delete(int id){
          venteRepository.deleteById(id);
     }
+
 }

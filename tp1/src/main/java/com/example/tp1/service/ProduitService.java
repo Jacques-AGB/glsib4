@@ -47,5 +47,9 @@ public class ProduitService {
         produitRepository.updateQteProduit(id,qte);
     }
 
+    public  void updateProduitVente(int id, int qte){
+        produitRepository.updateQteProduitVente(id,qte);
+    }
+
 
 }

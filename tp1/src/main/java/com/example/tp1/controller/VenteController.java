@@ -1,8 +1,7 @@
 package com.example.tp1.controller;
 
-import com.example.tp1.modele.Approvisionnement;
+
 import com.example.tp1.modele.Vente;
-import com.example.tp1.service.ApprovisionnementService;
 import com.example.tp1.service.ProduitService;
 import com.example.tp1.service.VenteService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,7 +34,7 @@ public class VenteController {
         //ajout
         vente.setDateVente(LocalDate.now());
         venteService.saveVente(vente);
-        produitService.updateProduit(vente.getProduit_id(), vente.getQte());
+        produitService.updateProduitVente(vente.getProduit_id(), vente.getQte());
         return "redirect:/produits/afficher";
     }
 
