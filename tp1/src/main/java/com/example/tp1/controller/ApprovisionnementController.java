@@ -19,8 +19,7 @@ public class ApprovisionnementController {
     ApprovisionnementService approvisionnementService;
     @Autowired
     ProduitService produitService;
-    @Autowired
-    CategorieService categorieService;
+
 
 
     @GetMapping("afficher")

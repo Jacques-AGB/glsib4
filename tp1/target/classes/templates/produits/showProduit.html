@@ -16,8 +16,8 @@
         <tr>
             <th scope="col">ID</th>
             <th scope="col">Libelle</th>
-            <th scope="col">Quantité</th>
-            <th scope="col">Stock</th>
+            <th scope="col">QuantitéStock</th>
+            <th scope="col">Quantite seuil</th>
             <th scope="col">Date de creation</th>
             <th scope="col">Prix</th>
             <th scope="col">Categorie</th>
@@ -37,6 +37,7 @@
             <td>
                 <a th:href="@{/produits/edit/{id}(id=${produits.id})}" class="btn btn-warning">Edit</a>
                 <a th:href="@{/produits/delete/{id}(id=${produits.id})} " class="btn btn-danger">Delete </a>
+                <a th:href="@{/vente/vendre/{id}(id=${produits.id})} " class="btn btn-danger">Vendre </a>
                 <a th:href="@{/approvisionnement/approvisionner/{id}(id=${produits.id})} " class="btn btn-danger">Approvisionner </a>
             </td>
         </tr>
