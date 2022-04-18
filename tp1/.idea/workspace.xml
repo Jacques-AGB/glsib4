@@ -6,11 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="896feced-c80e-4ba2-b174-5c8b5510675a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp1/controller/VenteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp1/controller/VenteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp1/repository/ProduitRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp1/repository/ProduitRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp1/repository/VenteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp1/repository/VenteRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp1/service/ProduitService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp1/service/ProduitService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp1/service/VenteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp1/service/VenteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp1/controller/HomeController.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,9 +17,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
+        <option value="HTML File" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -121,7 +117,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ca08457c-42b2-4652-a102-cf06392b3aab" name="Changes" comment="" />
+      <changelist id="896feced-c80e-4ba2-b174-5c8b5510675a" name="Changes" comment="" />
       <created>1647849964171</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
