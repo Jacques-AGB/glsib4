@@ -17,4 +17,7 @@ public class LigneVente {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+    private int qte;
+    private int prix;
+
 }

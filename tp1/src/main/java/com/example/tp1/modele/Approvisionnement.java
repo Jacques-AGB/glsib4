@@ -22,4 +22,10 @@ public class Approvisionnement {
     private Produit produit;
     private int produit_id;
 
+    @ManyToOne()
+    @JoinColumn(name = "utilisateur_id" , insertable = false, updatable = false)
+    private Utilisateur utilisateur;
+    private int utilisateur_id;
+
+
 }

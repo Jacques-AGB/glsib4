@@ -1,6 +1,6 @@
 package com.example.tp1.service;
 
-import com.example.tp1.modele.Approvisionnement;
+
 import com.example.tp1.modele.Vente;
 import com.example.tp1.repository.VenteRepository;
 import org.springframework.beans.factory.annotation.Autowired;

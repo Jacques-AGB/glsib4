@@ -22,5 +22,9 @@ public class Vente {
     private Produit produit;
     private int produit_id;
 
+    @ManyToOne
+    @JoinColumn(name = "clientId", insertable = false, updatable = false)
+    private Client client;
+    private int clientId;
 
 }
