@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="ca08457c-42b2-4652-a102-cf06392b3aab" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp1/controller/ProduitController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp1/controller/ProduitController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp1/repository/CategorieRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp1/repository/CategorieRepository.java" afterDir="false" />
@@ -11,6 +12,9 @@
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/produits/saveProduit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/produits/saveProduit.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/produits/showProduit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/produits/showProduit.html" afterDir="false" />
     </list>
+=======
+    <list default="true" id="896feced-c80e-4ba2-b174-5c8b5510675a" name="Changes" comment="" />
+>>>>>>> Stashed changes
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
