@@ -22,8 +22,12 @@
         <tbody>
         <tr th:each="Approvisionnement : ${listApprovisionnement}">
             <th th:text="${Approvisionnement.id}" scope="row"></th>
-            <td th:text="${Approvisionnement.qte}"></td>
             <td th:text="${Approvisionnement.produit.libelle}"></td>
+            <td th:text="${Approvisionnement.qte}"></td>
+            <td>
+                <a th:href="@{/approvisionnement/edit/{id}(id=${Approvisionnement.id})}" class="btn btn-warning">Edit</a>
+                <a th:href="@{/approvisionnement/delete/{id}(id=${Approvisionnement.id})} " class="btn btn-danger">Delete </a>
+            </td>
         </tr>
         </tbody>
     </table>

@@ -19,9 +19,7 @@ public class ProduitService {
     }
 
     //afficher liste de produits
-    public List<Produit> showProduits(){
-        return produitRepository.findAll();
-    }
+    //public List<Produit> showProduits(){return produitRepository.findAll();}
 
     //trouver un produit précis
     public Produit showOneProduit(int id ){
@@ -51,5 +49,11 @@ public class ProduitService {
         produitRepository.updateQteProduitVente(id,qte);
     }
 
+    public List<Produit> findAllProducts(String keyword){
+        if(keyword!=null){
+            return  produitRepository.search(keyword);
+        }
+        return produitRepository.findAll();
+    }
 
 }

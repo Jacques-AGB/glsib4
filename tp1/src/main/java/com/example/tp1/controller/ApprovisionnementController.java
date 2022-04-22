@@ -6,11 +6,13 @@ import com.example.tp1.service.ApprovisionnementService;
 import com.example.tp1.service.CategorieService;
 import com.example.tp1.service.ProduitService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDate;
+import java.util.List;
 
 @Controller
 @RequestMapping("/approvisionnement")
@@ -25,6 +27,7 @@ public class ApprovisionnementController {
     @GetMapping("afficher")
     public  String ShowListApprovisionnement(Model model)
     {
+
         model.addAttribute("listApprovisionnement",approvisionnementService.showApprovisionnement());
         return ("approvisionnement/showApprovisionnement");
     }
@@ -46,6 +49,24 @@ public class ApprovisionnementController {
         return "Approvisionnement/formApprovisionnement";
     }
 
+    @GetMapping("/Edit/{id}")
+    public Approvisionnement showEdit(@PathVariable("id") int id, Model model){
+        return approvisionnementService.showOneApprovisionnement(id);
+    }
+
+    @PostMapping("/edit")
+    public String editApprovisionnement(@ModelAttribute("approvisionnement") Approvisionnement approvisionnement){
+        approvisionnementService.saveApprovisionnement((approvisionnement));
+        return "redirect:/approvisionnement/afficher";
+    }
+
+
+    @GetMapping ("delete/{id}")
+    public String deleteApprovisionnement(@PathVariable("id") int id)
+    {
+        approvisionnementService.deleteApprovisionnement(id);
+        return "redirect:/approvisionnement/afficher";
+    }
 
 
 

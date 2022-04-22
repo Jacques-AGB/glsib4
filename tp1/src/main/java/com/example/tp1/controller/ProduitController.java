@@ -5,6 +5,7 @@ import com.example.tp1.modele.Produit;
 import com.example.tp1.service.CategorieService;
 import com.example.tp1.service.ProduitService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -22,9 +23,11 @@ public class ProduitController {
     private CategorieService categorieService;
 
     @GetMapping("/afficher")
-    public String displayProduct(Model model)
+    public String displayProduct(Model model,@Param("keyword") String keyword)
     {
-        model.addAttribute("listproduits", produitService.showProduits());
+        List<Produit> produits = produitService.findAllProducts(keyword);
+        model.addAttribute("listproduits",produits);
+        model.addAttribute("keyword",keyword);
         return "produits/showProduit";
     }
 

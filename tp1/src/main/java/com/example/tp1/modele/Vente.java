@@ -21,10 +21,10 @@ public class Vente {
     @JoinColumn(name = "produit_id" , insertable = false, updatable = false)
     private Produit produit;
     private int produit_id;
-
+/*
     @ManyToOne
     @JoinColumn(name = "clientId", insertable = false, updatable = false)
     private Client client;
     private int clientId;
-
+*/
 }

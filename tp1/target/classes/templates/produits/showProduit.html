@@ -10,7 +10,11 @@
 
 <div class="container">
     <h1> Liste des produits </h1>
-
+    <form th:action="@{/produits/afficher}"  method="get">
+        <input class="form-control form-control-dark w-100" type="text" name="keyword" placeholder="Search" aria-label="search">
+        <br/>
+        <input type="submit" value="Rechercher" class="btn btn-primary">
+    </form>
     <table class="table">
         <thead>
         <tr>

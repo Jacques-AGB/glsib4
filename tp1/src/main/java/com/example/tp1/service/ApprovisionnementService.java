@@ -26,7 +26,7 @@ public class ApprovisionnementService {
         return approvisionnementRepository.findAll();
     }
 
-    public Approvisionnement ShowOneApprovisionnement(int id){
+    public Approvisionnement showOneApprovisionnement(int id){
         return approvisionnementRepository.findById(id).get();
     }
 

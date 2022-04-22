@@ -22,8 +22,8 @@
     <tbody>
     <tr th:each="Vente : ${ListVentes}">
       <th th:text="${Vente.id}" scope="row"></th>
-      <td th:text="${Vente.qte}"></td>
       <td th:text="${Vente.produit.libelle}"></td>
+      <td th:text="${Vente.qte}"></td>
     </tr>
     </tbody>
   </table>

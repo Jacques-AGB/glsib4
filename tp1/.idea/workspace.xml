@@ -6,19 +6,27 @@
   <component name="ChangeListManager">
     <list default="true" id="896feced-c80e-4ba2-b174-5c8b5510675a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp1/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp1/controller/ClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp1/controller/ApprovisionnementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp1/controller/ApprovisionnementController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp1/controller/ProduitController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp1/controller/ProduitController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp1/controller/VenteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp1/controller/VenteController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp1/modele/Approvisionnement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp1/modele/Approvisionnement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp1/modele/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp1/modele/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp1/modele/LigneVente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp1/modele/LigneVente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp1/modele/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp1/modele/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp1/modele/Utilisateur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp1/modele/Utilisateur.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp1/modele/Vente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp1/modele/Vente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp1/repository/ProduitRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp1/repository/ProduitRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp1/service/ApprovisionnementService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp1/service/ApprovisionnementService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp1/service/ClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp1/service/ClientService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp1/service/LigneVenteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp1/service/LigneVenteService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp1/service/RoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp1/service/RoleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp1/service/UtilisateurService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp1/service/UtilisateurService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp1/service/VenteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp1/service/VenteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp1/service/ProduitService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp1/service/ProduitService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Approvisionnement/showApprovisionnement.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Approvisionnement/showApprovisionnement.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Vente/showVente.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Vente/showVente.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/produits/showProduit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/produits/showProduit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/tp1/controller/ApprovisionnementController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/tp1/controller/ApprovisionnementController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/tp1/controller/HomeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/tp1/controller/ProduitController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/tp1/controller/ProduitController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/tp1/repository/ProduitRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/tp1/repository/ProduitRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/tp1/service/ApprovisionnementService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/tp1/service/ApprovisionnementService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/tp1/service/ProduitService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/tp1/service/ProduitService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/Approvisionnement/showApprovisionnement.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/Approvisionnement/showApprovisionnement.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/Vente/showVente.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/Vente/showVente.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/produits/showProduit.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/produits/showProduit.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +101,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../stageGlsi/projetExcelGenerated" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
