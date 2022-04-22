@@ -27,4 +27,12 @@ public interface ProduitRepository extends JpaRepository<Produit, Integer> {
     @Query("select produit FROM produits produit where produit.libelle LIKE ?1%")
     List<Produit> search(String keyword);
 
+    @Transactional
+    @Query("SELECT SUM(p.qtStock) as TotalQte from produits p")
+    String CountQte();
+
+    @Transactional
+    @Query("SELECT produit from produits produit where produit.qtStock<produit.qtSeuil")
+    List<Produit> produitEnDessousSeuil();
+
 }

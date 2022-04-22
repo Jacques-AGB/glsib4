@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" th:href="@{/public/styles.css}">
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+</head>
+<body>
+<nav>
+    <div class="logo">
+        <p>Logo</p>
+    </div>
+    <ul>
+        <li><a th:href="@{/home}">HOME</a></li>
+        <li><a th:href="@{/produits/afficher}" >ARTICLES</a></li>
+        <li><a th:href="@{approvisionnement/afficher}" >APPROVISIONNEMENT</a></li>
+        <li><a th:href="@{/logout}" class="btn btn-primary" >Logout</a></li>
+    </ul>
+</nav>
+
+<div class="col-xl-3 col-md-6 mb-4">
+    <div class="card border-left-primary shadow h-100 py-2">
+        <div class="card-body">
+            <div class="row no-gutters align-items-center">
+                <div class="col mr-2">
+                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                        Total Article en Stock</div>
+                    <div class="h5 mb-0 font-weight-bold text-gray-800" th:text="${Total}"></div>
+                </div>
+                <div class="col-auto">
+                    <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h1 class="text-info font-weight-bold ">Liste des produits en dessous du seuil</h1>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">Libelle</th>
+        <th scope="col">Quantité</th>
+        <th scope="col">Seuil</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="productBelow : ${produitBelow}">
+        <td th:text="${productBelow.libelle}"></td>
+        <td th:text="${productBelow.qtStock}"></td>
+        <td th:text="${productBelow.qtSeuil}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
