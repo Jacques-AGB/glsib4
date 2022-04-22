@@ -17,4 +17,8 @@ public interface ProduitRepository extends JpaRepository<Produit, Integer> {
     @Query("update produits p set p.qtStock =p.qtStock+:qte where p.id=:id")
     void updateQteProduit(@Param("id") int id, @Param("qte") int qte);
 
+    @Transactional
+    @Query("select produit FROM produits produit where produit.libelle LIKE %?1%")
+    public List<Produit> search(String keyword);
+
 }

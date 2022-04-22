@@ -22,10 +22,11 @@ public class ProduitController {
     private CategorieService categorieService;
 
     @GetMapping("/afficher")
-    public String displayProduct(Model model)
-    {
-        model.addAttribute("listproduits", produitService.showProduits());
-        return "produits/showProduit";
+    public String displayProduct(Model model ,@Param("keyword") String keyword){
+        List<Produit> produits = produitService.findAllProducts(keyword);
+        model.addAttribute("Produits",produits);
+        model.addAttribute("keyword",keyword);
+        return "produit/AfficheProduit";
     }
 
     @GetMapping("/form")

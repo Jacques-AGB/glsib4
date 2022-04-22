@@ -47,5 +47,11 @@ public class ProduitService {
         produitRepository.updateQteProduit(id,qte);
     }
 
+    public List<Produit> findAllProducts(String keyword){
+        if(keyword!=null){
+            return  produitRepository.search(keyword);
+        }
+        return produitRepository.findAll();
+    }
 
 }
