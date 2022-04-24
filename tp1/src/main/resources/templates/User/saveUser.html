@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet"  th:href="@{/css/bootstrap.min.css}"/>
+</head>
+<body>
+<div class="container">
+    <h2>formulaire de saisie d'utilisateur </h2>
+
+    <form th:action="@{/user/save}" method="post" >
+        <div class="mb-3">
+            <label class="form-label">Utilisateur </label>
+            <select name="roleId" required >
+                <option value="" > Selectionner un rôle</option>
+                <option th:each="Role:${listRoles}"
+                        th:value="${Role.id}"
+                        th:text="${Role.nomRole}">
+                </option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label  class="form-label">UserName :</label>
+            <input type="text" name="userName" class="form-control"  >
+        </div>
+        <div class="mb-3">
+            <label  class="form-label">Password :</label>
+            <input type="text" name="password" class="form-control"  min="1" >
+        </div>
+
+        <div class="mb-3">
+            <input type="submit" value="Enregistrer" class="btn btn-primary">
+        </div>
+
+    </form>
+
+</div>
+<script rel="text/javascript"  th:src="@{/js/bootstrap.bundle.min.js}"></script>
+</body>
+</html>

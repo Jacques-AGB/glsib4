@@ -5,6 +5,7 @@ import com.example.tp1.modele.Produit;
 import com.example.tp1.service.CategorieService;
 import com.example.tp1.service.ProduitService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -22,10 +23,13 @@ public class ProduitController {
     private CategorieService categorieService;
 
     @GetMapping("/afficher")
-    public String displayProduct(Model model)
+    public String displayProduct(Model model,@Param("keyword") String keyword)
     {
-        model.addAttribute("listproduits", produitService.showProduits());
-        return "produits/showProduit";
+        List<Produit> produits = produitService.findAllProducts(keyword);
+        model.addAttribute("listproduits",produits);
+        model.addAttribute("keyword",keyword);
+       // return "produits/showProduit";
+        return "produits/Table";
     }
 
     @GetMapping("/form")
@@ -35,10 +39,15 @@ public class ProduitController {
         return "produits/saveProduit";
     }
 
+    @GetMapping("/produitsbelowseuil")
+    public String displayProductBelow(Model model){
+        model.addAttribute("produitBelow",produitService.produitBelow());
+        return "produits/produitBelow";
+    }
+
     @PostMapping("/save")
     public String saveProduit(Produit produit)
     {
-
         produit.setDateCreation(LocalDate.now());
         produit.setQtStock(0);
         produitService.saveProduit(produit);

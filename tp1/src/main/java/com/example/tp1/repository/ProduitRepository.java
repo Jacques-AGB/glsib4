@@ -8,6 +8,7 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import javax.transaction.Transactional;
+import java.util.List;
 
 @Repository
 public interface ProduitRepository extends JpaRepository<Produit, Integer> {
@@ -16,5 +17,22 @@ public interface ProduitRepository extends JpaRepository<Produit, Integer> {
     @Transactional
     @Query("update produits p set p.qtStock =p.qtStock+:qte where p.id=:id")
     void updateQteProduit(@Param("id") int id, @Param("qte") int qte);
+
+    @Modifying
+    @Transactional
+    @Query("update produits p set p.qtStock =p.qtStock-:qte where p.id=:id")
+    void updateQteProduitVente(@Param("id") int id, @Param("qte") int qte);
+
+    @Transactional
+    @Query("select produit FROM produits produit where produit.libelle LIKE ?1%")
+    List<Produit> search(String keyword);
+
+    @Transactional
+    @Query("SELECT SUM(p.qtStock) as TotalQte from produits p")
+    String CountQte();
+
+    @Transactional
+    @Query("SELECT produit from produits produit where produit.qtStock<produit.qtSeuil")
+    List<Produit> produitEnDessousSeuil();
 
 }

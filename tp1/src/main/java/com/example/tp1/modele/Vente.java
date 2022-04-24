@@ -4,10 +4,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.time.LocalDate;
 
 @Entity
 @NoArgsConstructor
@@ -17,5 +15,16 @@ public class Vente {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-
+    private int qte;
+    private LocalDate dateVente;
+    @ManyToOne
+    @JoinColumn(name = "produit_id" , insertable = false, updatable = false)
+    private Produit produit;
+    private int produit_id;
+/*
+    @ManyToOne
+    @JoinColumn(name = "clientId", insertable = false, updatable = false)
+    private Client client;
+    private int clientId;
+*/
 }
