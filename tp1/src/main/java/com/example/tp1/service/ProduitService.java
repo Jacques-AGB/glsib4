@@ -19,7 +19,7 @@ public class ProduitService {
     }
 
     //afficher liste de produits
-    //public List<Produit> showProduits(){return produitRepository.findAll();}
+    public List<Produit> showProduits(){return produitRepository.findAll();}
 
     //trouver un produit précis
     public Produit showOneProduit(int id ){

@@ -29,7 +29,7 @@ public class ApprovisionnementController {
     {
 
         model.addAttribute("listApprovisionnement",approvisionnementService.showApprovisionnement());
-        return ("approvisionnement/showApprovisionnement");
+        return ("Approvisionnement/showApprovisionnement");
     }
 
     @PostMapping("/save")

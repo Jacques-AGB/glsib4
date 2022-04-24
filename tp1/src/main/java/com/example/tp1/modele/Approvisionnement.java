@@ -24,7 +24,7 @@ public class Approvisionnement {
 
     /*@ManyToOne()
     @JoinColumn(name = "utilisateur_id" , insertable = false, updatable = false)
-    private Utilisateur utilisateur;
+    private User utilisateur;
     private int utilisateur_id;*/
 
 

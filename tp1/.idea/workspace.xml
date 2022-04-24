@@ -6,12 +6,35 @@
   <component name="ChangeListManager">
     <list default="true" id="896feced-c80e-4ba2-b174-5c8b5510675a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp1/repository/ProduitRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp1/repository/ProduitRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp1/Tp1Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp1/Tp1Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp1/controller/ApprovisionnementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp1/controller/ApprovisionnementController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp1/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp1/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp1/controller/ProduitController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp1/controller/ProduitController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp1/controller/RoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp1/controller/RoleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp1/controller/UtilisateurController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp1/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp1/controller/VenteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp1/controller/VenteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp1/modele/Approvisionnement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp1/modele/Approvisionnement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp1/modele/Utilisateur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp1/modele/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp1/repository/UtilisateurRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp1/repository/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp1/service/ProduitService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp1/service/ProduitService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/exemple.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/tp1/repository/ProduitRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/tp1/repository/ProduitRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp1/service/UtilisateurService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Approvisionnement/showApprovisionnement.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Approvisionnement/showApprovisionnement.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Categorie/showCategorie.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Categorie/showCategorie.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/produits/showProduit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Vente/showProduit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/tp1/Tp1Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/tp1/Tp1Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/tp1/controller/ApprovisionnementController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/tp1/controller/ApprovisionnementController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/tp1/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/tp1/controller/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/tp1/controller/ProduitController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/tp1/controller/ProduitController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/tp1/controller/UtilisateurController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/tp1/controller/VenteController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/tp1/controller/VenteController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/tp1/modele/Utilisateur.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/tp1/repository/UtilisateurRepository.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/tp1/service/ProduitService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/tp1/service/ProduitService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/exemple.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/tp1/service/UtilisateurService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/Index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/produits/showProduit.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,9 +45,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
-        <option value="HTML File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -86,10 +109,11 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/projetExcelGenerated" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../stageGlsi/projetExcelGenerated" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Git_Repository\glsib4\tp1\src\main\resources\templates\Vente" />
       <recent name="D:\Git_Repository\glsib4\tp1\src\main\resources\static\public" />
       <recent name="D:\iaiTogo\troisiemeAnnee\semestre6\spring\projects\tp1\src\main\resources\static" />
     </key>
@@ -97,6 +121,8 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Git_Repository\glsib4\tp1\src\main\resources\templates\Vente" />
+      <recent name="D:\Git_Repository\glsib4\tp1\src\main\resources\templates\produits" />
       <recent name="D:\Git_Repository\glsib4\tp1\src\main\resources\static" />
     </key>
     <key name="CreateTestDialog.RecentsKey">

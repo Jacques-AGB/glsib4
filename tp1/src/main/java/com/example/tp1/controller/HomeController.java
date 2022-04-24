@@ -16,9 +16,21 @@ public class HomeController {
     public String loginPage(){
         return "login";
     }
+
     @GetMapping("/logout")
     public  String logoutPage(){
         return "logout";
+    }
+
+    @GetMapping("/table")
+    public String table(){
+        return "Table";
+    }
+
+    @GetMapping("/admin")
+    public String Admin(Model model){
+        model.addAttribute("Total" ,produitService.countQte());
+        return "admin";
     }
 
     @GetMapping("/home")

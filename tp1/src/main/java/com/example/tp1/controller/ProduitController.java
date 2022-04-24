@@ -28,7 +28,8 @@ public class ProduitController {
         List<Produit> produits = produitService.findAllProducts(keyword);
         model.addAttribute("listproduits",produits);
         model.addAttribute("keyword",keyword);
-        return "produits/showProduit";
+       // return "produits/showProduit";
+        return "produits/Table";
     }
 
     @GetMapping("/form")
@@ -38,10 +39,15 @@ public class ProduitController {
         return "produits/saveProduit";
     }
 
+    @GetMapping("/produitsbelowseuil")
+    public String displayProductBelow(Model model){
+        model.addAttribute("produitBelow",produitService.produitBelow());
+        return "produits/produitBelow";
+    }
+
     @PostMapping("/save")
     public String saveProduit(Produit produit)
     {
-
         produit.setDateCreation(LocalDate.now());
         produit.setQtStock(0);
         produitService.saveProduit(produit);
