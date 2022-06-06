@@ -31,15 +31,23 @@
 <!-- Page Wrapper -->
 <div id="wrapper">
 
+    <form th:action="@{/vente/SelectClient}" method="post" >
+        <label class="form-label">Produit </label>
+        <select name="clientId" required >
+            <option value="" > Selectionner un produit</option>
+            <option th:each="Libelle:${listproduits}"
+                    th:value="${Libelle.id}"
+                    th:text="${Libelle.libelle}">
+            </option>
+        </select>
+        <div class="mb-3">
+            <a th:href="@{/vente/afficher2} "  class="btn btn-primary">Commander<i class="fas fa-pencil-alt fa-sm fa-fw mr-2 text-center text-white"></i></a>
+        </div>
+    </form>
+
+
     <!-- Sidebar -->
             <div class="container-fluid">
-
-                <div class="card shadow mb-4">
-                    <div class="card-header py-3">
-                        <h6 class="m-0 font-weight-bold text-primary">Listes des produits</h6>
-                        <a th:href="@{/vente/afficher2} " data-toggle="modal" data-target="#logoutModal" class="btn btn-info">Vendre<i class="fas fa-pencil-alt fa-sm fa-fw mr-2 text-center text-white"></i></a>
-
-                    </div>
                     <div class="card-body">
                         <div class="table-responsive">
                             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">

@@ -4,10 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 @AllArgsConstructor
@@ -18,6 +15,15 @@ public class LigneVente {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private int qte;
-    private int prix;
+
+    @ManyToOne
+    @JoinColumn(name = "produitId", insertable = false, updatable = false)
+    private Produit produit;
+    private int produitId;
+
+    @ManyToOne
+    @JoinColumn(name = "venteId", updatable = false, insertable = false)
+    private Vente vente;
+    private int venteId;
 
 }

@@ -11,6 +11,14 @@
     <h2>formulaire de vente de Produit </h2>
 
     <form th:action="@{/vente/save}" th:object="${UnProduit}" method="post" >
+        <label class="form-label">Client </label>
+        <select name="clientId" required >
+            <option value="" > Selectionner un client</option>
+            <option th:each="Client:${listClient}"
+                    th:value="${Client.id}"
+                    th:text="${Client.nom}">
+            </option>
+        </select>
         <div class="mb-3">
             <label  class="form-label">Produit </label>
             <input type="text" th:value="${UnProduit.libelle}" class="form-control"  readonly min="1" >

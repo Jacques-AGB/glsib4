@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <title>Facture</title>
+  <link rel="stylesheet"  th:href="@{/css/bootstrap.min.css}"/>
+
+</head>
+<body>
+
+<div class="container">
+  <h1> Facture </h1>
+
+  <table class="table">
+    <thead>
+    <tr>
+      <th scope="col">Code</th>
+      <th scope="col">****</th>
+      <th scope="col">Client</th>
+      <th scope="col">Vendeur</th>
+      <th scope="col"></th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="prod : ${facture}">
+      <th th:text="${prod.codevente}" scope="row"></th>
+      <td th:text="${prod.datevente}"></td>
+      <td th:text="${prod.clientModel.nom}"></td>
+      <td th:text="${prod.utilisateurModel.nom}"></td>
+
+
+      <!--td>
+          <a th:href="@{/commande/edit/{id}(id=${prod.id})}" class="btn btn-warning">Modifier</a>
+          <a th:href="@{/commande/delete/{id}(id=${prod.id})} " class="btn btn-danger">retirer</a>
+
+      </td-->
+      <td rowspan="3"></td>
+      <!--td>
+          <a th:href="@{/commande/facture/{id}(id=${prod.venteId})}" class="btn btn-success">Facturer</a>
+      </td-->
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="container">
+  <h1> Produit commander </h1>
+
+  <table class="table">
+    <thead>
+    <tr>
+      <th scope="col">Code Produit</th>
+      <th scope="col">produit</th>
+      <th scope="col">prix</th>
+      <th scope="col">Quantite</th>
+      <th scope="col">Totale</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="prod : ${unevente}">
+      <th th:text="${prod.produitId}" scope="row"></th>
+      <td th:text="${prod.produitModel.libelle}"></td>
+      <td th:text="${prod.produitModel.prix}"></td>
+      <td th:text="${prod.quantite}"></td>
+      <td th:text="${prod.quantite * prod.produitModel.prix}"></td>
+      <p th:with="totalPrice=${prod.quantite * prod.produitModel.prix}"> </p>
+
+    </tr>
+
+    <tr>
+      <th scope="col" rowspan="3">Totale</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td th:text="${total}"></td>
+    </tr>
+
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>

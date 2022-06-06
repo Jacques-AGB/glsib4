@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>commande</title>
+    <link rel="stylesheet"  th:href="@{/css/bootstrap.min.css}"/>
+
+</head>
+<body>
+
+<div class="container">
+
+    <br/><br/><br/>
+
+
+
+    <h2>formulaire de commande Produit </h2>
+    <form th:action="@{/ligneVente/save}" method="post" >
+        <div class="mb-3">
+            <label class="form-label">Produit </label>
+            <select name="produitId" required >
+                <option value="" > Selectionner un produit</option>
+                <option th:each= "Produit:${listProduit}"
+                        th:value="${Produit.id}"
+                        th:text="${Produit.libelle}">
+                </option>
+
+            </select>
+        </div>
+        <div class="mb-3">
+            <label  class="form-label">quantité </label>
+            <input type="number" name="qte" class="form-control"  min="1" >
+        </div>
+
+        <div class="mb-3">
+            <input type="submit" value="Ajouter" class="btn btn-primary">
+
+        </div>
+
+    </form>
+
+</div>
+
+<div class="container">
+    <h1> Liste des Produits Commander </h1>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">produit</th>
+            <th scope="col">prix</th>
+            <th scope="col">Quantite</th>
+            <th scope="col">Totale</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="prod : ${unevente}">
+            <th th:text="${prod.produitId}" scope="row"></th>
+            <td th:text="${prod.Produit.libelle}"></td>
+            <td th:text="${prod.Produit.prix}"></td>
+            <td th:text="${prod.qte}"></td>
+            <td th:text="${prod.qte * prod.Produit.prix}"></td>
+        </tr>
+
+        </tbody>
+    </table>
+</div>
+
+
+<script rel="text/javascript"  th:src="@{/js/bootstrap.bundle.min.js}"></script>
+
+</body>
+</html>

@@ -59,6 +59,7 @@ public class ProduitService {
     public String countQte(){
         return produitRepository.CountQte();
     }
+
     public List<Produit> produitBelow(){
         return produitRepository.produitEnDessousSeuil();
     }

@@ -35,8 +35,8 @@ public class HomeController {
 
     @GetMapping("/home")
     public String afficherHome(Model model){
-        model.addAttribute("Total" ,produitService.countQte());
-        model.addAttribute("produitBelow",produitService.produitBelow());
+        /*model.addAttribute("Total" ,produitService.countQte());*/
+        /*model.addAttribute("produitBelow",produitService.produitBelow());*/
         return "Index";
     }
 }

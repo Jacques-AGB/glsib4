@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" >
+    <title>Title</title>
+    <link rel="stylesheet"  th:href="@{/css/bootstrap.min.css}"/>
+</head>
+<body>
+
+<div class="container">
+    <h2>Selectionner un client</h2>
+
+    <form th:action="@{/vente/save}" method="post" >
+        <label class="form-label">Client </label>
+        <select name="clientId" required >
+            <option value="" > Selectionner un client</option>
+            <option th:each="Client:${listClient}"
+                    th:value="${Client.id}"
+                    th:text="${Client.nom}">
+            </option>
+        </select>
+        <div class="mb-3">
+            <input type="submit" value="vendre" class="btn btn-primary">
+        </div>
+    </form>
+
+</div>
+<script rel="text/javascript"  th:src="@{/js/bootstrap.bundle.min.js}"></script>
+
+</body>
+</html>

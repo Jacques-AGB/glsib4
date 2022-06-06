@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet"  th:href="@{/css/bootstrap.min.css}"/>
+</head>
+<body>
+<div class="container">
+    <h2>formulaire de saisie de Client </h2>
+
+    <form th:action="@{/client/save}" method="post" >
+        <div class="mb-3">
+            <label  class="form-label">Nom</label>
+            <input type="text" name="nom" class="form-control"  >
+        </div>
+        <div class="mb-3">
+            <label  class="form-label">Prenom </label>
+            <input type="text" name="prenom" class="form-control"  min="1" >
+        </div>
+        <div class="mb-3">
+            <label  class="form-label">Numero Telephone </label>
+            <input type="number" name="numTelephone" class="form-control"  >
+        </div>
+        <div class="mb-3">
+            <label  class="form-label">Adresse </label>
+            <input type="text" name="adresse" class="form-control"  >
+        </div>
+        <div class="mb-3">
+            <input type="submit" value="Enregistrer" class="btn btn-primary">
+        </div>
+
+    </form>
+
+</div>
+<script rel="text/javascript"  th:src="@{/js/bootstrap.bundle.min.js}"></script>
+</body>
+</html>

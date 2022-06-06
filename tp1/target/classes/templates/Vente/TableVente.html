@@ -125,7 +125,7 @@
 
                 <div class="card shadow mb-4">
                     <div class="card-header py-3">
-                        <h6 class="m-0 font-weight-bold text-primary">Listes des produits</h6>
+                        <h6 class="m-0 font-weight-bold text-primary">Listes des produits vendus</h6>
                     </div>
                     <div class="card-body">
                         <div class="table-responsive">
@@ -133,20 +133,21 @@
                                 <thead>
                                 <tr>
                                     <th scope="col">ID</th>
-                                    <th scope="col">Libelle</th>
-                                    <th scope="col">Quantité</th>
+                                    <th scope="col">client</th>
+                                    <th scope="col">caissier</th>
+                                    <th scope="col">Date</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <tr th:each="Vente : ${ListVentes}">
                                     <th th:text="${Vente.id}" scope="row"></th>
-                                    <td th:text="${Vente.produit.libelle}"></td>
-                                    <td th:text="${Vente.qte}"></td>
+                                    <td th:text="${Vente.Client.nom}"></td>
+                                    <td th:text="${Vente.User.nom}"></td>
+                                    <td th:text="${Vente.dateVente}"></td>
                                     <td>
-                                        <a th:href="@{/produits/edit/{id}(id=${item.id})}" data-toggle="modal" data-target="#logoutModal" class="btn btn-info"><i class="fas fa-pencil-alt fa-sm fa-fw mr-2 text-center text-white"></i></a>
-                                        <a th:href="@{/produits/delete/{id}(id=${item.id})}" class="btn btn-danger"><i class="fas fa-trash-alt fa-sm fa-fw mr-2 text-center text-white"></i></a>
-                                        <a th:href="@{/approvisionnement/approvisionner/{id}(id=${item.id})}" class="btn btn-warning"><i class="fas fa-plus-circle fa-sm fa-fw mr-2 text-center text-white"></i> </a>
-                                    </td>
+                                        <a th:href="@{/vente/edit/{id}(id=${item.id})}" data-toggle="modal" data-target="#logoutModal" class="btn btn-info"><i class="fas fa-pencil-alt fa-sm fa-fw mr-2 text-center text-white"></i></a>
+                                        <a th:href="@{/vente/delete/{id}(id=${item.id})}" class="btn btn-danger"><i class="fas fa-trash-alt fa-sm fa-fw mr-2 text-center text-white"></i></a>
+                                        </td>
                                 </tr>
                                 </tbody>
                             </table>

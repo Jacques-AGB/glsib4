@@ -35,6 +35,16 @@
                 <i class="fas fa-laugh-wink"></i>
             </div>
             <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+
+            <li class="nav-item">
+                <a class="nav-link" th:href="@{/client/form}">
+                    <span>Ajouter client</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" th:href="@{/client/afficher}">
+                    <span>Liste des clients</span></a>
+            </li>
         </a>
     </ul>
         <!-- Divider -->
@@ -69,8 +79,7 @@
                 <div class="card shadow mb-4">
                     <div class="card-header py-3">
                         <h6 class="m-0 font-weight-bold text-primary">Listes des produits</h6>
-                        <a th:href="@{/vente/afficher2} "  class="btn btn-primary">Vendre<i class="fas fa-pencil-alt fa-sm fa-fw mr-2 text-center text-white"></i></a>
-
+                        <a th:href="@{/vente/SelectClient} "  class="btn btn-primary">Vendre<i class="fas fa-pencil-alt fa-sm fa-fw mr-2 text-center text-white"></i></a>
                     </div>
 
                     <div class="card-body">
